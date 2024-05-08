@@ -1,3 +1,4 @@
+# ec2 variables
 variable "instance_names" {
     type = list
     default = ["db","backend","frontend"]
@@ -21,6 +22,7 @@ variable "common_tags" {
     }
 }
 
+#sg variables
 variable "sg_name" {
     default = "allow_ssh"
 }
@@ -42,3 +44,12 @@ variable "allowed_cidr" {
     default = ["0.0.0.0/0"]
 }
 
+
+#r53 variables
+variable "zone_id" {
+    default = "Z08884492QFPW45HM4UQO"
+}
+
+variable "domain_name" {
+    default = "daws78s.online"
+}
