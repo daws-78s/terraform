@@ -14,6 +14,7 @@ resource "aws_security_group" "allow_ssh" {
     name = "allow_ssh"
     description = "allowing SSH access"
 
+    #terraform block
     ingress {
         from_port        = 22
         to_port          = 22
